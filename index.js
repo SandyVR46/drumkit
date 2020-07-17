@@ -8,20 +8,11 @@ for(var i = 0; i<numOfDrumButton ; i++){
 	document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 
 		var buttonInnerHTML = this.innerHTML;
-		
 		makeSound(buttonInnerHTML);
 		buttonAnimation(buttonInnerHTML);
-
-
-		
-
-		
 		});
-
-	
-
-
 	}
+
 // Detecting Keyboard press
 		document.addEventListener("keydown", function(event){
 			makeSound(event.key);
